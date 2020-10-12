@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sc.dao.UserRepository">
+
+    <resultMap id="BaseResultMap" type="com.sc.pojo.User">
+        <id column="id" jdbcType="BIGINT" property="id" />
+        <result column="nickname" jdbcType="VARCHAR" property="nickname" />
+        <result column="username" jdbcType="VARCHAR" property="username" />
+        <result column="password" jdbcType="VARCHAR" property="password" />
+        <result column="email" jdbcType="VARCHAR" property="email" />
+        <result column="avatar" jdbcType="VARCHAR" property="avatar" />
+        <result column="type" jdbcType="INTEGER" property="type" />
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+        <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    </resultMap>
+    <select id="findByUsernameAndPassword" resultMap="BaseResultMap">
+        select *from  t_user where username =#{username} and password =#{password}
+    </select>
+</mapper>

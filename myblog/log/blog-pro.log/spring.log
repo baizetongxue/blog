@@ -1,0 +1,9 @@
+2020-05-19 19:41:45.104  INFO 8448 --- [main] com.sc.MyblogApplicationTests            : Starting MyblogApplicationTests on DESKTOP-671CS26 with PID 8448 (started by Boy in G:\blog\myblog)
+2020-05-19 19:41:45.109  INFO 8448 --- [main] com.sc.MyblogApplicationTests            : The following profiles are active: pro
+2020-05-19 19:41:49.018  INFO 8448 --- [main] com.sc.MyblogApplicationTests            : Started MyblogApplicationTests in 4.565 seconds (JVM running for 5.943)
+2020-05-19 19:42:23.211  INFO 13980 --- [main] com.sc.MyblogApplicationTests            : Starting MyblogApplicationTests on DESKTOP-671CS26 with PID 13980 (started by Boy in G:\blog\myblog)
+2020-05-19 19:42:23.213  INFO 13980 --- [main] com.sc.MyblogApplicationTests            : The following profiles are active: pro
+2020-05-19 19:42:27.229  INFO 13980 --- [main] com.sc.MyblogApplicationTests            : Started MyblogApplicationTests in 4.428 seconds (JVM running for 5.433)
+2020-05-19 19:43:52.464  INFO 8556 --- [main] com.sc.MyblogApplicationTests            : Starting MyblogApplicationTests on DESKTOP-671CS26 with PID 8556 (started by Boy in G:\blog\myblog)
+2020-05-19 19:43:52.466  INFO 8556 --- [main] com.sc.MyblogApplicationTests            : The following profiles are active: pro
+2020-05-19 19:43:56.237  INFO 8556 --- [main] com.sc.MyblogApplicationTests            : Started MyblogApplicationTests in 4.176 seconds (JVM running for 5.212)

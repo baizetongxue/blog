@@ -1,0 +1,20 @@
+2020-05-19 00:27:44.261  INFO 1488 --- [main] com.sc.MyblogApplicationTests            : Starting MyblogApplicationTests on DESKTOP-671CS26 with PID 1488 (started by Boy in G:\blog\myblog)
+2020-05-19 00:27:44.294 DEBUG 1488 --- [main] com.sc.MyblogApplicationTests            : Running with Spring Boot v2.2.7.RELEASE, Spring v5.2.6.RELEASE
+2020-05-19 00:27:44.295  INFO 1488 --- [main] com.sc.MyblogApplicationTests            : The following profiles are active: dev
+2020-05-19 00:27:47.564  INFO 1488 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-19 00:27:47.737  INFO 1488 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-19 00:27:48.445  INFO 1488 --- [main] com.sc.MyblogApplicationTests            : Started MyblogApplicationTests in 4.947 seconds (JVM running for 6.456)
+2020-05-19 00:27:49.070  INFO 1488 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-05-19 00:27:49.973  INFO 1488 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-19 00:27:49.975  INFO 1488 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2020-05-19 00:27:49.985  INFO 1488 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-05-19 00:29:06.169  INFO 13936 --- [main] com.sc.MyblogApplicationTests            : Starting MyblogApplicationTests on DESKTOP-671CS26 with PID 13936 (started by Boy in G:\blog\myblog)
+2020-05-19 00:29:06.172 DEBUG 13936 --- [main] com.sc.MyblogApplicationTests            : Running with Spring Boot v2.2.7.RELEASE, Spring v5.2.6.RELEASE
+2020-05-19 00:29:06.173  INFO 13936 --- [main] com.sc.MyblogApplicationTests            : The following profiles are active: dev
+2020-05-19 00:29:09.236  INFO 13936 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-19 00:29:09.442  INFO 13936 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-19 00:29:10.074  INFO 13936 --- [main] com.sc.MyblogApplicationTests            : Started MyblogApplicationTests in 5.043 seconds (JVM running for 6.476)
+2020-05-19 00:29:10.688  INFO 13936 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-05-19 00:29:11.590  INFO 13936 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-19 00:29:11.593  INFO 13936 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2020-05-19 00:29:11.599  INFO 13936 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed

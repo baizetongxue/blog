@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sc.dao.TagRepository">
+
+    <insert id="saveTag" parameterType="com.sc.pojo.Tag">
+        insert  into t_tag(name) values(#{name})
+    </insert>
+
+    <update id="updateTag" parameterType="com.sc.pojo.Tag">
+        update t_tag set name = #{name}
+        where id = #{id}
+    </update>
+
+    <delete id="deleteById">
+        delete from t_tag where id = #{id}
+    </delete>
+
+    <resultMap id="BaseResultMap" type="com.sc.pojo.Tag">
+        <result column="id" property="id"></result>
+        <result column="name" property="name"></result>
+        <collection property="blogs" ofType="com.sc.pojo.Blog">
+            <id property="id" column="bid"></id>
+            <result property="title" column="title"></result>
+        </collection>
+    </resultMap>
+<!--id-->
+    <select id="getById" resultMap="BaseResultMap">
+        select *from t_tag where id = #{id}
+    </select>
+<!--    name-->
+    <select id="getByName" resultMap="BaseResultMap">
+        select *from t_tag where name =#{name}
+    </select>
+<!--    all-->
+    <select id="getTags" resultMap="BaseResultMap">
+        select *from t_tag
+    </select>
+    <select id="getAllTags" resultType="com.sc.pojo.Tag">
+        select *from t_tag
+    </select>
+    <select id="getRightSidebarTags" resultMap="BaseResultMap">
+        select t.id , t.name, b.id bid, b.title
+        from t_tag t, t_blog b, t_blog_tags bt
+        where t.id = bt.tag_id and b.id = bt.blog_id
+    </select>
+
+
+</mapper>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head th:replace="_fragments :: head(~{::title})">
+    <title>关于我</title>
+</head>
+<body>
+<!--导航-->
+<nav th:replace="_fragments :: menu(5)"></nav>
+
+<!--中间内容-->
+    <div class="m-container m-padded-tb-big ">
+        <div class="ui container">
+            <div class="ui stackable grid">
+                <div class="eleven wide column animate__animated animate__bounceInDown">
+                    <img src="https://picsum.photos/seed/picsum/800/600" alt="" class="ui rounded image">
+                </div>
+                <div class="five wide column animate__animated animate__rubberBand">
+                    <div class="ui top attached segment">
+                        <div class="ui header">关于我</div>
+                    </div>
+                    <div class="ui  attached segment">
+                        <p class="m-text">&nbsp;&nbsp;&nbsp;&nbsp;白泽同学呀！ITwang一枚，在不断的完善自身。希望结实可以共同成长的小伙伴!!!</p>
+                        <p class="m-text">&nbsp;&nbsp;&nbsp;&nbsp;爱编程，爱生活，更爱自己!!!</p>
+                    </div>
+                    <div class="ui  attached center aligned segment">
+                        <div class="ui orange basic button  label" style="width: 60px!important;">编程</div>
+                        <div class="ui orange basic button  label" style="width: 60px!important;">算法</div>
+                        <div class="ui orange basic button  label" style="width: 60px!important;">思考</div>
+                        <div class="ui orange basic button  label" style="width: 60px!important;">长跑</div>
+                    </div>
+                    <div class="ui  attached segment">
+                        <div class="ui teal basic  left pointing m-margin-tb-tiny label">java</div>
+                        <div class="ui teal basic  left pointing m-margin-tb-tiny label">c++</div>
+                        <div class="ui teal basic  left pointing m-margin-tb-tiny label">JavaScript</div>
+                        <div class="ui teal basic  left pointing m-margin-tb-tiny label">MySql</div>
+                        <div class="ui teal basic  left pointing m-margin-tb-tiny label">python</div>
+                        <div class="ui teal basic  left pointing m-margin-tb-tiny label">C</div>
+                        <div class="ui teal basic  left pointing m-margin-tb-tiny label">spring boot</div>
+                        <div class="ui teal basic  left pointing m-margin-tb-tiny label">...</div>
+                    </div>
+                    <div class="ui attached segment bottom">
+                        <a href="#" class="ui circular icon button m-margin-left-right-mini" ><i class="github icon"></i></a>
+                        <a href="#" class="ui circular icon button m-margin-left-right-mini" ><i class="weixin icon"></i></a>
+                        <a href="#" class="ui qq circular icon button m-margin-left-right-mini"
+                           data-content="2232656361" data-position="bottom center"><i class="qq icon"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!--底部footer-->
+<footer th:replace="_fragments :: footer"></footer>>
+
+<script>
+<!--    操控导航栏按钮,控制菜单栏显示-->
+    $('.menu.toggle').click(function () {
+            $('.m-item').toggleClass('m-mobile-hide');
+    });
+    $('.qq').popup();
+</script>
+</body>
+</html>

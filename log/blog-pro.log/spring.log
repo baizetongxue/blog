@@ -1,0 +1,25 @@
+2020-05-19 19:29:18.482  INFO 13252 --- [restartedMain] com.sc.MyblogApplication                 : Starting MyblogApplication on DESKTOP-671CS26 with PID 13252 (G:\blog\myblog\target\classes started by Boy in G:\blog)
+2020-05-19 19:29:18.484  INFO 13252 --- [restartedMain] com.sc.MyblogApplication                 : The following profiles are active: pro
+2020-05-19 19:29:22.602  INFO 13252 --- [restartedMain] com.sc.MyblogApplication                 : Started MyblogApplication in 4.961 seconds (JVM running for 6.66)
+2020-05-19 19:55:36.551  INFO 13148 --- [restartedMain] com.sc.MyblogApplication                 : Starting MyblogApplication on DESKTOP-671CS26 with PID 13148 (G:\blog\myblog\target\classes started by Boy in G:\blog)
+2020-05-19 19:55:36.554  INFO 13148 --- [restartedMain] com.sc.MyblogApplication                 : The following profiles are active: pro
+2020-05-19 19:55:38.899 ERROR 13148 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8888 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8888 or configure this application to listen on another port.
+
+2020-05-19 19:56:01.475  INFO 12404 --- [restartedMain] com.sc.MyblogApplication                 : Starting MyblogApplication on DESKTOP-671CS26 with PID 12404 (G:\blog\myblog\target\classes started by Boy in G:\blog)
+2020-05-19 19:56:01.478  INFO 12404 --- [restartedMain] com.sc.MyblogApplication                 : The following profiles are active: pro
+2020-05-19 19:56:03.859  INFO 12404 --- [restartedMain] com.sc.MyblogApplication                 : Started MyblogApplication in 3.05 seconds (JVM running for 4.116)
+2020-05-19 19:56:16.616  INFO 12404 --- [http-nio-8888-exec-1] com.sc.aspect.LoggerAspect               : Request : {url='http://localhost:8888/', ip='0:0:0:0:0:0:0:1', classMethod='com.sc.controller.IndexController.index', args=[{}, 1]}
+2020-05-19 19:56:17.162  INFO 12404 --- [http-nio-8888-exec-1] com.sc.aspect.LoggerAspect               : --------doAfter--------
+2020-05-19 19:56:17.163  INFO 12404 --- [http-nio-8888-exec-1] com.sc.aspect.LoggerAspect               : Result : {}index

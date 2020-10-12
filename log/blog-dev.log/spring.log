@@ -1,0 +1,270 @@
+2020-10-12 18:10:42.656  INFO 20772 --- [restartedMain] com.sc.MyblogApplication                 : Starting MyblogApplication on DESKTOP-671CS26 with PID 20772 (G:\blog\myblog\target\classes started by Boy in G:\blog)
+2020-10-12 18:10:42.669 DEBUG 20772 --- [restartedMain] com.sc.MyblogApplication                 : Running with Spring Boot v2.2.7.RELEASE, Spring v5.2.6.RELEASE
+2020-10-12 18:10:42.669  INFO 20772 --- [restartedMain] com.sc.MyblogApplication                 : The following profiles are active: dev
+2020-10-12 18:10:42.726  INFO 20772 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-10-12 18:10:42.726  INFO 20772 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-10-12 18:10:44.226  INFO 20772 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2020-10-12 18:10:44.237  INFO 20772 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-12 18:10:44.237  INFO 20772 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.34]
+2020-10-12 18:10:44.384  INFO 20772 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-12 18:10:44.384  INFO 20772 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1658 ms
+2020-10-12 18:10:45.246  INFO 20772 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-12 18:10:45.341  INFO 20772 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-10-12 18:10:45.711  INFO 20772 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-10-12 18:10:45.785  INFO 20772 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2020-10-12 18:10:45.788  INFO 20772 --- [restartedMain] com.sc.MyblogApplication                 : Started MyblogApplication in 3.755 seconds (JVM running for 5.057)
+2020-10-12 18:11:17.277  INFO 20772 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-12 18:11:17.278  INFO 20772 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-10-12 18:11:17.397  INFO 20772 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 119 ms
+2020-10-12 18:11:17.427  INFO 20772 --- [http-nio-8888-exec-1] com.sc.aspect.LoggerAspect               : Request : {url='http://localhost:8888/', ip='0:0:0:0:0:0:0:1', classMethod='com.sc.controller.IndexController.index', args=[{}, 1]}
+2020-10-12 18:11:17.543  INFO 20772 --- [http-nio-8888-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-10-12 18:11:18.050  INFO 20772 --- [http-nio-8888-exec-1] com.sc.aspect.LoggerAspect               : --------doAfter--------
+2020-10-12 18:11:18.051  INFO 20772 --- [http-nio-8888-exec-1] com.sc.aspect.LoggerAspect               : Result : {}index
+2020-10-12 18:11:25.972  WARN 20772 --- [http-nio-8888-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2020-10-12 18:11:31.235  WARN 20772 --- [http-nio-8888-exec-4] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [242] milliseconds.
+2020-10-12 18:31:12.178  INFO 20772 --- [http-nio-8888-exec-6] com.sc.aspect.LoggerAspect               : Request : {url='http://localhost:8888/', ip='0:0:0:0:0:0:0:1', classMethod='com.sc.controller.IndexController.index', args=[{}, 1]}
+2020-10-12 18:31:12.402  INFO 20772 --- [http-nio-8888-exec-6] com.sc.aspect.LoggerAspect               : --------doAfter--------
+2020-10-12 18:31:12.403  INFO 20772 --- [http-nio-8888-exec-6] com.sc.aspect.LoggerAspect               : Result : {}index
+2020-10-12 18:31:13.688  WARN 20772 --- [http-nio-8888-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2020-10-12 18:32:29.462  INFO 20772 --- [http-nio-8888-exec-8] com.sc.aspect.LoggerAspect               : Request : {url='http://localhost:8888/', ip='0:0:0:0:0:0:0:1', classMethod='com.sc.controller.IndexController.index', args=[{}, 1]}
+2020-10-12 18:32:29.475  INFO 20772 --- [http-nio-8888-exec-8] com.sc.aspect.LoggerAspect               : --------doAfter--------
+2020-10-12 18:32:29.475  INFO 20772 --- [http-nio-8888-exec-8] com.sc.aspect.LoggerAspect               : Result : {}index
+2020-10-12 18:32:40.484  INFO 20772 --- [http-nio-8888-exec-7] com.sc.aspect.LoggerAspect               : Request : {url='http://localhost:8888/blog/10', ip='0:0:0:0:0:0:0:1', classMethod='com.sc.controller.IndexController.blog', args=[10, {}]}
+2020-10-12 18:32:40.566  INFO 20772 --- [http-nio-8888-exec-7] com.sc.aspect.LoggerAspect               : --------doAfter--------
+2020-10-12 18:32:40.566  INFO 20772 --- [http-nio-8888-exec-7] com.sc.aspect.LoggerAspect               : Result : {}blog
+2020-10-12 18:33:23.227  INFO 20772 --- [http-nio-8888-exec-4] com.sc.aspect.LoggerAspect               : Request : {url='http://localhost:8888/', ip='0:0:0:0:0:0:0:1', classMethod='com.sc.controller.IndexController.index', args=[{}, 1]}
+2020-10-12 18:33:23.237  INFO 20772 --- [http-nio-8888-exec-4] com.sc.aspect.LoggerAspect               : --------doAfter--------
+2020-10-12 18:33:23.237  INFO 20772 --- [http-nio-8888-exec-4] com.sc.aspect.LoggerAspect               : Result : {}index
+2020-10-12 18:33:26.069  INFO 20772 --- [http-nio-8888-exec-2] com.sc.aspect.LoggerAspect               : Request : {url='http://localhost:8888/blog/10', ip='0:0:0:0:0:0:0:1', classMethod='com.sc.controller.IndexController.blog', args=[10, {}]}
+2020-10-12 18:33:26.074  INFO 20772 --- [http-nio-8888-exec-2] com.sc.aspect.LoggerAspect               : --------doAfter--------
+2020-10-12 18:33:26.074  INFO 20772 --- [http-nio-8888-exec-2] com.sc.aspect.LoggerAspect               : Result : {}blog
+2020-10-12 18:33:31.790  INFO 20772 --- [http-nio-8888-exec-3] com.sc.aspect.LoggerAspect               : Request : {url='http://localhost:8888/blog/10', ip='0:0:0:0:0:0:0:1', classMethod='com.sc.controller.IndexController.blog', args=[10, {}]}
+2020-10-12 18:33:31.795  INFO 20772 --- [http-nio-8888-exec-3] com.sc.aspect.LoggerAspect               : --------doAfter--------
+2020-10-12 18:33:31.795  INFO 20772 --- [http-nio-8888-exec-3] com.sc.aspect.LoggerAspect               : Result : {}blog
+2020-10-12 19:42:41.060  INFO 20772 --- [http-nio-8888-exec-6] com.sc.aspect.LoggerAspect               : Request : {url='http://localhost:8888/', ip='0:0:0:0:0:0:0:1', classMethod='com.sc.controller.IndexController.index', args=[{}, 1]}
+2020-10-12 19:42:41.094  INFO 20772 --- [http-nio-8888-exec-6] com.sc.aspect.LoggerAspect               : --------doAfter--------
+2020-10-12 19:42:41.095  INFO 20772 --- [http-nio-8888-exec-6] com.sc.aspect.LoggerAspect               : Result : {}index
+2020-10-12 19:42:47.386  INFO 20772 --- [http-nio-8888-exec-5] com.sc.aspect.LoggerAspect               : Request : {url='http://localhost:8888/blog/10', ip='0:0:0:0:0:0:0:1', classMethod='com.sc.controller.IndexController.blog', args=[10, {}]}
+2020-10-12 19:42:47.391  INFO 20772 --- [http-nio-8888-exec-5] com.sc.aspect.LoggerAspect               : --------doAfter--------
+2020-10-12 19:42:47.391  INFO 20772 --- [http-nio-8888-exec-5] com.sc.aspect.LoggerAspect               : Result : {}blog
+2020-10-12 19:42:52.533  INFO 20772 --- [http-nio-8888-exec-8] com.sc.aspect.LoggerAspect               : Request : {url='http://localhost:8888/', ip='0:0:0:0:0:0:0:1', classMethod='com.sc.controller.IndexController.index', args=[{}, 1]}
+2020-10-12 19:42:52.544  INFO 20772 --- [http-nio-8888-exec-8] com.sc.aspect.LoggerAspect               : --------doAfter--------
+2020-10-12 19:42:52.544  INFO 20772 --- [http-nio-8888-exec-8] com.sc.aspect.LoggerAspect               : Result : {}index
+2020-10-12 19:42:56.558  INFO 20772 --- [http-nio-8888-exec-7] com.sc.aspect.LoggerAspect               : Request : {url='http://localhost:8888/search', ip='0:0:0:0:0:0:0:1', classMethod='com.sc.controller.IndexController.search', args=[{}, 1, my]}
+2020-10-12 19:42:56.564  INFO 20772 --- [http-nio-8888-exec-7] com.sc.aspect.LoggerAspect               : --------doAfter--------
+2020-10-12 19:42:56.564  INFO 20772 --- [http-nio-8888-exec-7] com.sc.aspect.LoggerAspect               : Result : {}search
+2020-10-12 19:42:58.235  INFO 20772 --- [http-nio-8888-exec-10] com.sc.aspect.LoggerAspect               : Request : {url='http://localhost:8888/blog/6', ip='0:0:0:0:0:0:0:1', classMethod='com.sc.controller.IndexController.blog', args=[6, {}]}
+2020-10-12 19:42:58.239  INFO 20772 --- [http-nio-8888-exec-10] com.sc.aspect.LoggerAspect               : --------doAfter--------
+2020-10-12 19:42:58.240  INFO 20772 --- [http-nio-8888-exec-10] com.sc.aspect.LoggerAspect               : Result : {}blog
+2020-10-12 19:43:09.560  INFO 20772 --- [http-nio-8888-exec-4] com.sc.aspect.LoggerAspect               : Request : {url='http://localhost:8888/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.sc.controller.TagShowController.tags', args=[-1, {}, 1]}
+2020-10-12 19:43:09.569  INFO 20772 --- [http-nio-8888-exec-4] com.sc.aspect.LoggerAspect               : --------doAfter--------
+2020-10-12 19:43:09.569  INFO 20772 --- [http-nio-8888-exec-4] com.sc.aspect.LoggerAspect               : Result : {}tags
+2020-10-12 19:43:11.772  INFO 20772 --- [http-nio-8888-exec-2] com.sc.aspect.LoggerAspect               : Request : {url='http://localhost:8888/tags/6', ip='0:0:0:0:0:0:0:1', classMethod='com.sc.controller.TagShowController.tags', args=[6, {}, 1]}
+2020-10-12 19:43:11.777  INFO 20772 --- [http-nio-8888-exec-2] com.sc.aspect.LoggerAspect               : --------doAfter--------
+2020-10-12 19:43:11.777  INFO 20772 --- [http-nio-8888-exec-2] com.sc.aspect.LoggerAspect               : Result : {}tags
+2020-10-12 19:43:13.076  INFO 20772 --- [http-nio-8888-exec-3] com.sc.aspect.LoggerAspect               : Request : {url='http://localhost:8888/tags/4', ip='0:0:0:0:0:0:0:1', classMethod='com.sc.controller.TagShowController.tags', args=[4, {}, 1]}
+2020-10-12 19:43:13.082  INFO 20772 --- [http-nio-8888-exec-3] com.sc.aspect.LoggerAspect               : --------doAfter--------
+2020-10-12 19:43:13.082  INFO 20772 --- [http-nio-8888-exec-3] com.sc.aspect.LoggerAspect               : Result : {}tags
+2020-10-12 19:43:14.687  WARN 20772 --- [http-nio-8888-exec-9] o.s.web.servlet.PageNotFound             : No mapping for GET /archives/-1
+2020-10-12 19:43:14.733 ERROR 20772 --- [http-nio-8888-exec-9] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8888-exec-9] Exception processing template "error/404": An error happened during template parsing (template: "class path resource [templates/error/404.html]")
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/error/404.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362) ~[thymeleaf-spring5-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189) ~[thymeleaf-spring5-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.34.jar:9.0.34]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.34.jar:9.0.34]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.34.jar:9.0.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.34.jar:9.0.34]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712) ~[tomcat-embed-core-9.0.34.jar:9.0.34]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461) ~[tomcat-embed-core-9.0.34.jar:9.0.34]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384) ~[tomcat-embed-core-9.0.34.jar:9.0.34]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312) ~[tomcat-embed-core-9.0.34.jar:9.0.34]
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:394) ~[tomcat-embed-core-9.0.34.jar:9.0.34]
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:253) ~[tomcat-embed-core-9.0.34.jar:9.0.34]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:175) ~[tomcat-embed-core-9.0.34.jar:9.0.34]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.34.jar:9.0.34]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.34.jar:9.0.34]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.34.jar:9.0.34]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) ~[tomcat-embed-core-9.0.34.jar:9.0.34]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.34.jar:9.0.34]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) ~[tomcat-embed-core-9.0.34.jar:9.0.34]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590) ~[tomcat-embed-core-9.0.34.jar:9.0.34]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.34.jar:9.0.34]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.34.jar:9.0.34]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: org.attoparser.ParseException: Error resolving fragment: "${title}": template or fragment could not be resolved (template: "error/404" - line 15, col 12)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	... 36 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateInputException: Error resolving fragment: "${title}": template or fragment could not be resolved (template: "error/404" - line 15, col 12)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.doProcess(AbstractStandardFragmentInsertionTagProcessor.java:116) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	... 38 common frames omitted
+
+2020-10-12 19:43:14.735 ERROR 20772 --- [http-nio-8888-exec-9] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] threw exception
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving fragment: "${title}": template or fragment could not be resolved (template: "error/404" - line 15, col 12)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.doProcess(AbstractStandardFragmentInsertionTagProcessor.java:116) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362) ~[thymeleaf-spring5-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189) ~[thymeleaf-spring5-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.34.jar:9.0.34]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.34.jar:9.0.34]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.34.jar:9.0.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.34.jar:9.0.34]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712) ~[tomcat-embed-core-9.0.34.jar:9.0.34]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461) ~[tomcat-embed-core-9.0.34.jar:9.0.34]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384) ~[tomcat-embed-core-9.0.34.jar:9.0.34]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312) ~[tomcat-embed-core-9.0.34.jar:9.0.34]
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:394) ~[tomcat-embed-core-9.0.34.jar:9.0.34]
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:253) ~[tomcat-embed-core-9.0.34.jar:9.0.34]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:175) ~[tomcat-embed-core-9.0.34.jar:9.0.34]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.34.jar:9.0.34]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.34.jar:9.0.34]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.34.jar:9.0.34]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) ~[tomcat-embed-core-9.0.34.jar:9.0.34]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.34.jar:9.0.34]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) ~[tomcat-embed-core-9.0.34.jar:9.0.34]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590) ~[tomcat-embed-core-9.0.34.jar:9.0.34]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.34.jar:9.0.34]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.34.jar:9.0.34]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2020-10-12 19:43:14.736 ERROR 20772 --- [http-nio-8888-exec-9] o.a.c.c.C.[Tomcat].[localhost]           : Exception Processing ErrorPage[errorCode=0, location=/error]
+
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/error/404.html]")
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.34.jar:9.0.34]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.34.jar:9.0.34]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.34.jar:9.0.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.34.jar:9.0.34]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712) ~[tomcat-embed-core-9.0.34.jar:9.0.34]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461) ~[tomcat-embed-core-9.0.34.jar:9.0.34]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384) ~[tomcat-embed-core-9.0.34.jar:9.0.34]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312) ~[tomcat-embed-core-9.0.34.jar:9.0.34]
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:394) ~[tomcat-embed-core-9.0.34.jar:9.0.34]
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:253) ~[tomcat-embed-core-9.0.34.jar:9.0.34]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:175) ~[tomcat-embed-core-9.0.34.jar:9.0.34]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.34.jar:9.0.34]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.34.jar:9.0.34]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.34.jar:9.0.34]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) ~[tomcat-embed-core-9.0.34.jar:9.0.34]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.34.jar:9.0.34]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) ~[tomcat-embed-core-9.0.34.jar:9.0.34]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590) ~[tomcat-embed-core-9.0.34.jar:9.0.34]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.34.jar:9.0.34]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.34.jar:9.0.34]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/error/404.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362) ~[thymeleaf-spring5-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189) ~[thymeleaf-spring5-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	... 25 common frames omitted
+Caused by: org.attoparser.ParseException: Error resolving fragment: "${title}": template or fragment could not be resolved (template: "error/404" - line 15, col 12)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	... 36 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateInputException: Error resolving fragment: "${title}": template or fragment could not be resolved (template: "error/404" - line 15, col 12)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.doProcess(AbstractStandardFragmentInsertionTagProcessor.java:116) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	... 38 common frames omitted
+
+2020-10-12 19:43:14.759  WARN 20772 --- [http-nio-8888-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /css/animate.min.css
+2020-10-12 19:43:14.762  WARN 20772 --- [http-nio-8888-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /css/typo.css
+2020-10-12 19:43:14.762  WARN 20772 --- [http-nio-8888-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /css/me.css
+2020-10-12 19:43:14.762  WARN 20772 --- [http-nio-8888-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET /lib/prism/prism.css
+2020-10-12 19:43:14.763  WARN 20772 --- [http-nio-8888-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /lib/tocbot/tocbot.css
+2020-10-12 19:43:14.795  WARN 20772 --- [http-nio-8888-exec-10] o.s.web.servlet.PageNotFound             : No mapping for GET /css/animate.min.css
+2020-10-12 19:43:14.795  WARN 20772 --- [http-nio-8888-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /css/me.css
+2020-10-12 19:43:14.795  WARN 20772 --- [http-nio-8888-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /lib/prism/prism.css
+2020-10-12 19:43:14.795  WARN 20772 --- [http-nio-8888-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /css/typo.css
+2020-10-12 19:43:14.796  WARN 20772 --- [http-nio-8888-exec-9] o.s.web.servlet.PageNotFound             : No mapping for GET /lib/tocbot/tocbot.css
+2020-10-12 19:43:18.601  INFO 20772 --- [http-nio-8888-exec-7] com.sc.aspect.LoggerAspect               : Request : {url='http://localhost:8888/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.sc.controller.TypeShowController.types', args=[-1, {}, 1]}
+2020-10-12 19:43:18.610  INFO 20772 --- [http-nio-8888-exec-7] com.sc.aspect.LoggerAspect               : --------doAfter--------
+2020-10-12 19:43:18.611  INFO 20772 --- [http-nio-8888-exec-7] com.sc.aspect.LoggerAspect               : Result : {}types
+2020-10-12 19:43:21.251  INFO 20772 --- [http-nio-8888-exec-6] com.sc.aspect.LoggerAspect               : Request : {url='http://localhost:8888/', ip='0:0:0:0:0:0:0:1', classMethod='com.sc.controller.IndexController.index', args=[{}, 1]}
+2020-10-12 19:43:21.258  INFO 20772 --- [http-nio-8888-exec-6] com.sc.aspect.LoggerAspect               : --------doAfter--------
+2020-10-12 19:43:21.259  INFO 20772 --- [http-nio-8888-exec-6] com.sc.aspect.LoggerAspect               : Result : {}index

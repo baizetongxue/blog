@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="admin/_fragments :: head(~{::title})">
+    <title>博客管理</title>
+</head>
+<body>
+    <!--导航-->
+    <nav th:replace="admin/_fragments :: menu(0)"
+         class="ui inverted segment attached m-padded-tb-mini">
+    </nav>
+    <!--中间内容-->
+    <div class="m-container m-padded-tb-big">
+        <div class="ui container">
+            <div class="ui positive large message">
+                <h2>官人</h2>
+                <p>您来啦~~</p>
+            </div>
+
+            <img src="https://picsum.photos/seed/picsum/1000/450"
+                 alt="" class="ui rounded bordered image">
+        </div>
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+    <!--底部footer-->
+    <footer th:replace="admin/_fragments :: footer"
+            class="ui inverted segment vertical m-padded-tb-massive m-margin-top-large">
+    </footer>
+
+
+
+<script>
+<!--    操控导航栏按钮,控制菜单栏显示-->
+    $('.menu.toggle').click(function () {
+            $('.m-item').toggleClass('m-mobile-hide');
+    })
+    $('.ui.dropdown').dropdown();
+</script>
+</body>
+</html>

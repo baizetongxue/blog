@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="admin/_fragments :: head(~{::title})">
+    <title>标签管理</title>
+</head>
+<body>
+<!--导航-->
+<nav th:replace="admin/_fragments :: menu(3)"
+     class="ui inverted segment attached m-padded-tb-mini">
+</nav>
+<!--    二级导航-->
+    <div class="ui attached pointing menu">
+        <div class="ui container">
+            <div class="right menu">
+                <a href="" class="item">发布</a>
+                <a href="" class="active teal item">列表</a>
+            </div>
+
+        </div>
+    </div>
+    <!--中间内容-->
+    <div class="m-container m-padded-tb-big">
+        <div class="ui container">
+            <div class="ui success message" th:unless="${#strings.isEmpty(message)}">
+                <i class="close icon"></i>
+                <div class="header">小白泽提醒您</div>
+                <p th:text="${message}"></p>
+            </div>
+            <table class="ui celled table">
+                <thead>
+                <tr>
+                    <th>序号</th>
+                    <th>名称</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="tag : ${pageInfo.list}">
+                    <td th:text="${tag.id}">1</td>
+                    <td th:text="${tag.name}"></td>
+                    <td>
+                        <a href="#" th:href="@{/admin/tags/{id}/input(id=${tag.id})}" class="ui mini teal basic button">编辑</a>
+                        <a href="#" th:href="@{/admin/tags/{id}/delete(id=${tag.id})}" class="ui mini red basic button">删除</a>
+                    </td>
+                </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="6">
+                            <div class="ui mini pagination menu" th:if="${pageInfo.pages}>1">
+                                <a class="mini ui button item" th:href="@{/admin/tags(pageNum=1)}">首页</a>
+                                <a class="mini ui button item"
+                                   th:href="@{/admin/tags(pageNum=${pageInfo.hasPreviousPage}?${pageInfo.prePage}:1)}">上一页</a>
+                                <a class="mini ui button item"
+                                   th:href="@{/admin/tags(pageNum=${pageInfo.hasNextPage}?${pageInfo.nextPage}:${pageInfo.pages})}">下一页</a>
+                                <a class="mini ui button item" th:href="@{/admin/tags(pageNum=${pageInfo.getLastPage()})}" >尾页</a>
+                            </div>
+                            <div class="ui segment m-inline-block">
+                                <p >当前第<span th:text="${pageInfo.pageNum}"></span>页，总<span th:text="${pageInfo.pages}"></span>页，共<span th:text="${pageInfo.total}"></span>条记录</p>
+                            </div>
+
+                            <a href="" class="ui right floated inverted teal button m-text-thin"
+                               th:href="@{/admin/tags/input}"
+                               style="color: teal!important" _msthash="1996605" _msttexthash="5538390">新增</a>
+                        </th>
+                    </tr>
+                </tfoot>
+
+            </table>
+        </div>
+    </div>
+
+
+<br>
+<!--底部footer-->
+<footer th:replace="admin/_fragments :: footer"
+        class="ui inverted segment vertical m-padded-tb-massive m-margin-top-large">
+</footer>
+
+
+
+
+<script>
+<!--    操控导航栏按钮,控制菜单栏显示-->
+    $('.menu.toggle').click(function () {
+            $('.m-item').toggleClass('m-mobile-hide');
+    })
+    $('.ui.dropdown').dropdown({
+        on : 'hover'
+    });
+    $('.message .close')
+        .on('click',function () {
+            $(this)
+                .closest('.message')
+                .transition('fade');
+    })
+
+</script>
+</body>
+</html>

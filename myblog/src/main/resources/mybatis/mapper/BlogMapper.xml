@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sc.dao.BlogRepository">
+
+<!--    插入blog-->
+    <insert id="saveBlog" parameterType="com.sc.pojo.Blog" useGeneratedKeys="true" keyProperty="id">
+        insert  into t_blog(title,content,first_picture,flag,views,appreciation,share_statement,
+        commentabled,published,recommend,create_time,update_time,user_id,type_id,tag_id,description)
+        values (#{title}, #{content}, #{firstPicture}, #{flag}, #{views}, #{appreciation},
+        #{shareStatement}, #{commentabled}, #{published}, #{recommend}, #{createTime},
+        #{updateTime},#{userId},#{typeId}, #{tagId}, #{description} )
+    </insert>
+
+<!--    更新blog内容-->
+    <update id="updateBlog" parameterType="com.sc.pojo.Blog">
+        update t_blog set
+        title=#{title},content=#{content},first_picture=#{firstPicture},flag=#{flag},
+        appreciation=#{appreciation},share_statement=#{shareStatement},commentabled=#{commentabled},
+        published=#{published},recommend=#{recommend},update_time=#{updateTime},type_id = #{typeId},
+        tag_id=#{tagId} ,description = #{description}
+        where id =#{id}
+    </update>
+    <insert id="saveBlogAndTag" parameterType="com.sc.pojo.BlogAndTag" >
+         insert into t_blog_tags (tag_id, blog_id) values (#{tagId},#{blogId});
+    </insert>
+    <!--    条件搜索-->
+    <select id="conditionalSearchBlogs" parameterType="com.sc.pojo.Blog" resultMap="blogTypeUser">
+        <bind name="pattern" value="'%' + title + '%'" />
+        select b.id, b.title, b.update_time, b.recommend, b.published, b.type_id, t.id, t.name
+        from t_blog b ,t_type t
+        <where>
+            <if test="1 == 1">
+                b.type_id = t.id
+            </if>
+            <if test="typeId != null">
+                and b.type_id = #{typeId}
+            </if>
+            <if test="recommend != null">
+                and b.recommend = #{recommend}
+            </if>
+            <if test="title != null">
+                and b.title like #{pattern}
+            </if>
+        </where>
+    </select>
+    <delete id="deleteBlog">
+        delete from t_blog where id =#{id}
+    </delete>
+    <delete id="deleteBlogAndTag" parameterType="long">
+        delete from t_blog_tags where blog_id = #{id}
+    </delete>
+
+    <resultMap id="blogTypeUser" type="com.sc.pojo.Blog">
+        <result column="id" property="id"></result>
+        <result column="title" property="title"></result>
+        <result column="content" property="content"></result>
+        <result column="first_picture" property="firstPicture"></result>
+        <result column="flag" property="flag"></result>
+        <result column="views" property="views"></result>
+        <result column="appreciation" property="appreciation"></result>
+        <result column="share_statement" property="shareStatement"></result>
+        <result column="commentabled" property="commentabled"></result>
+        <result column="published" property="published"></result>
+        <result column="recommend" property="recommend"></result>
+        <result column="create_time" property="createTime"></result>
+        <result column="update_time" property="updateTime"></result>
+        <result column="user_id" property="userId"></result>
+        <result column="type_id" property="typeId"></result>
+        <result column="tag_id" property="tagId"></result>
+        <result column="description" property="description"></result>
+        <association property="type" column="type_id" javaType="com.sc.pojo.Type">
+            <result column="id" property="id"></result>
+            <result column="name" property="name"></result>
+        </association>
+        <association property="user" column="user_id" javaType="com.sc.pojo.User" >
+            <result column="" property="id"></result>
+            <result column="nickname"  property="nickname"></result>
+            <result column="username" property="username" ></result>
+            <result column="password" property="password" ></result>
+            <result column="email" property="email" ></result>
+            <result column="avatar" property="avatar" ></result>
+            <result column="type" property="type" ></result>
+            <result column="create_time" property="createTime"></result>
+            <result column="update_time" property="updateTime"></result>
+        </association>
+        <collection property="tags" column="tag_id" ofType="com.sc.pojo.Tag">
+            <id property="id" column="tagid"></id>
+            <result property="name" column="tagname"></result>
+        </collection>
+    </resultMap>
+
+    <select id="getBlogById" resultMap="blogTypeUser">
+        select b.id, b.published, b.flag, b.title, b.content, b.type_id,
+         b.tag_id, b.first_picture, b.description, b.recommend,
+         b.share_statement, b.appreciation, b.commentabled,b.description
+        from t_blog b  where  b.id = #{id};
+    </select>
+    <select id="listBlogs" resultMap="blogTypeUser">
+            select b.id,b.title,b.update_time,b.recommend,b.type_id,b.published,
+               t.id ,t.name from t_blog b ,t_type t where b.type_id = t.id
+    </select>
+    <select id="getIndexBlog" resultMap="blogTypeUser">
+        select b.id, b.title, b.first_picture, b.views, b.update_time, b.description,
+        t.name, t.id,
+        u.nickname, u.avatar
+        from t_blog b, t_type t, t_user u
+        where b.type_id = t.id and  u.id = b.user_id order by b.update_time desc
+
+    </select>
+    <select id="getRecommendBlogs" resultMap="blogTypeUser">
+        select id , title, recommend from t_blog where recommend = 1 order by update_time desc;
+    </select>
+    <select id="getSearchBlogs" resultMap="blogTypeUser" parameterType="string">
+        <bind name="pattern" value="'%' + query + '%'"/>
+        select b.id, b.title, b.first_picture, b.views, b.update_time, b.description,
+        t.name , u.nickname, u.avatar
+        from t_blog b, t_type t, t_user u
+        where b.type_id = t.id and  u.id = b.user_id and (b.title like #{pattern} or b.content like  #{pattern})
+        order by b.update_time desc
+    </select>
+    <select id="getDetailedBlogById" resultMap="blogTypeUser" parameterType="long">
+        select b.id, b.first_picture, b.flag, b.title, b.content, b.views,
+        b.update_time,b.commentabled, b.share_statement, b.appreciation,
+        u.nickname, u.avatar,
+        tag.id tagid, tag.name tagname
+        from t_blog b, t_user u, t_tag tag, t_blog_tags tb
+        where b.user_id = u.id and tb.blog_id = b.id and tb.tag_id = tag.id and  b.id = #{id}
+    </select>
+    <select id="getBlogsByTypeId" resultMap="blogTypeUser" parameterType="long">
+        select b.id, b.title, b.first_picture, b.views, b.update_time, b.description,
+        t.name typename, t.id typeid,
+        u.nickname, u.avatar
+        from t_blog b, t_type t, t_user u
+        where b.type_id = t.id and u.id = b.user_id and b.type_id = #{id}
+        order by b.update_time desc
+    </select>
+    <select id="getBlogsByTagId" resultMap="blogTypeUser">
+        select b.id, b.title, b.first_picture, b.views, b.update_time, b.description,
+        ty.name typename, ty.id typeid,
+        tg.name tagname, tg.id tagid,
+        u.nickname, u.avatar
+        from t_blog b, t_type ty, t_user u, t_blog_tags tb, t_tag tg
+        where b.user_id = u.id and b.type_id = ty.id and b.id = tb.blog_id and tg.id = tb.tag_id and tg.id = #{id}
+        order by b.update_time desc
+    </select>
+</mapper>
